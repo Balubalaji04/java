@@ -1,2 +1,836 @@
+Questions
+Input and Output
+1)MS Dhoni aged X years, is a Cancerian, born with very strong Mars in his birth chart. Notably, Mars is the ruling planet for sports. Write a program to get the age of Dhoni as an integer and display the same.
+Input Format:
+Input is an integer that corresponds to the age of Dhoni.
+Output Format: 
+Display the age.
+Refer sample Input and Output for formatting specifications.
+[All the text in bold corresponds to the Input]
+Sample Input and Output:
+Enter the age:
+35
+Age of Dhoni is 35
+Ans:
+a=int(input())
+print("Age of Dhoni is",a)
+2)After Dhoni made it to the pinnacle of Success as Indian Captain, Mr. Banerjee was once invited by the Media to recall his association with Dhoni. Mr. Banerjee quoted one important moment that complemented the traits of Dhoni. It was when he approached Dhoni and asked him if he would play cricket for the school team saying "Will you be a wicketkeeper?" and was taken aback by Dhoni's confident reply "I will if I get a chance". Write a program to display the answers of Dhoni that impressed his master.
+Input and Output Format:
+Refer Sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+Sample Input and Output:
+Banerjee's Question:
+Will you be a wicketkeeper?
+Dhoni's Reply:
+I will if i get a chance.
+For Banerjee's question "Will you be a wicketkeeper?" Dhoni's confident reply was "I will if I get a chance."
+Ans:
+p=input("Banerjee's Question:\n")
+r=input("Dhoni's Reply:\n")
+print("For Banerjee's Question \"{}\" Dhoni's Confident reply was \"{}\"".format(p,r))
+3)It was in the 1997-98 season that Ranchi saw the rise of the Captain Cool in the interschool trophy between DAV Jawahar Vidhya Mandir and Kendriya School. It was in that match Dhoni convinced Banerjee to be the opener and justified it with a double century.
+Write a program to display the details of the match with Team name, Scores of the team and Overs played.
+Input and Output Format:  
+Refer sample input and output for formatting specifications.
+[All text in bold corresponds to input and the rest corresponds to output]
+Sample Input and Output:
+Team 1:
+Team Name:
+DAV Jawahar Vidhya Mandir
+Score:
+150
+Overs played:
+20
+Team 2:
+Team name:
+Kendriya School
+Score:
+110
+Overs played:
+18
+Match Details:
+Team 1:
+Name: DAV Jawahar Vidhya Mandir
+Score: 150
+Overs played: 20
+Team 2:
+Name:  Kendriya School
+Score: 110
+Overs played: 18
 
-https://docs.google.com/spreadsheets/d/1__oIAZyl9ZBYpg0mxGCTY4IXQkix3BTx1pXV1NXsqgA/edit?usp=sharing
+
+OPERATORS
+1)Assume Dhoni's current age is 6. After 3 years, Dhoni's mother Devki Devi would be 4 times Dhoni's age. What is Devki Devi's current age? Write a program to determine the same.
+Input Format:
+First line of input consists of one integer value as age of Dhoni.
+Output Format:
+Output should display an integer that specifies Devki Devi's current age.
+Sample Input and Output1:
+6
+33
+Sample Input and Output2:
+3
+21
+Note: Bold highlighted is the output value.
+Ans:
+cAge=int(input())
+deviAge =((cAge+3)*4)-3
+print(deviAge)
+
+
+2) Dhoni once wished to join a a reputed Cricket Coaching Camp to be held at a place "X" kms away from his house. He told about this to his father and got his consent to use his friend's bike for the Camp. The Camp was to be held on all days of the month. His friend's bike provides a mileage of Y km/litre and the cost of petrol was Rs. Z. Dhoni's father now wanted to know the total amount that was needed by Dhoni to spend on his travel to the Camp. Help him find the same and assume number of days in a month as 30 days.
+Input Format:
+First line of the input is an integer "X" in kms that specifies the distance of the Camp from Dhoni's house.
+Second line is an integer "Y" in km/litre that specifies the mileage of his friend's bike.
+Third line is a float "Z" that specifies the cost of petrol in rupees.
+Output Format:
+Output should display a float that gives the total amount that is needed by Dhoni to spend on his travel in rupees. The float value is displayed correct to 2 decimal places.
+Sample Input and Output 1:
+75
+55
+63
+2577.27
+Sample Input and Output 2:
+35
+78
+65.0
+875.00
+Note: Bold highlighted is the output
+x=float(input())
+y=float(input())
+z=float(input())
+a=(x*z*30)/y
+print("%.2f"%a)
+
+
+3)MS Dhoni is a grade A player according to BCCI Central Contracts in 2016. MSD's net worth in 2016 is around 31 million and is said to be the richest Indian cricketer.
+Apart from his salary as an Indian cricketer, Dhoni endorses various popular brands and earns a large amount from endorsements. Besides that individual and team bonuses are also given on the basis of individual and team performances. So precisely the sources of income for Dhoni are from - Salary, Bonuses and Awards through Winning and Endorsements.
+Write a program that finds Dhoni's percentage of income earned from each of the 3 individual sources.
+Input Format:
+First line of the input is an integer that specifies Dhoni's income in rupees from Salary.
+Second line is an integer that specifies Dhoni's income in rupees from Bonuses and Awards.
+Third line is an integer that specifies Dhoni's income in rupees from endorsements.
+Output Format:
+Output should display 3 floats in a line, separated by a space. The first float corresponds to the percentage of income from Salary, the second float corresponds to the percentage of income from Bonuses and Awards and the third float corresponds to the percentage of income from endorsements.
+All float values should be displayed correct to 2 decimal places.
+Sample Input and Output 1:
+100
+20
+80
+50.00 10.00 40.00
+Sample Input and Output2:
+50000
+10000
+35000
+52.63 10.53 36.84
+Note: Bold highlighted is the output
+
+Ans:
+s=int(input ())
+b=int(input ())
+e=int(input ())
+ti=s+b+e
+ps=(s/ti)*100
+pb=(b/ti)*100
+pe=(e/ti)*100
+print("%.2f"%ps,"%.2f"%pb,"%.2f"%pe)
+
+4)
+Extras
+Extras are runs scored by a means other than a batsman hitting the ball. A batsman is not given credit for extras other than runs scored off the bat from a no ball, and the extras are tallied separately on the scorecard and count only towards the team’s score. the types of extras are No ball, Wide, Bye, Leg-bye and Penalty. 1 Penalty corresponds to 5 runs.
+Find the total runs that the Extras contribute to the team’s score, given the number of No-balls, wides, byes, leg-byes and penalty given off by the bowlers in innings.
+Input format:
+First line of the input contains an integer that corresponds to the number of No-balls.
+Second line of the input contain an integer that corresponds to the numbers of wides.
+Third line of the input contains an integer that corresponds to the number of byes.
+Fourth line of the input contain an integer that corresponds to the numbers of led-byes.
+Fifth line of the input contains an integer that corresponds to the numbers of penalty runs.
+Output format:
+Output should display an integer that returns the total runs that the extras together contribute to team’s total.
+Sample input and output 1:
+4
+7
+3
+10
+3
+39
+Sample input and output 2:
+2
+3
+7
+1
+17
+
+
+5)
+Tamilnadu was battling one if it’s worst floods in a century last December, as several part of the state have been submerged and cut off from essential supplies. It was heartening that the Cricketers came forward to contribute for the cause of floods and it was decided amongst the team that the senior players donate 50% of their salary and junior players to donate 40% against the flood relief measures
+Assume there are 6 senior players and 5 junior players. The salary of senior players Rs.X and that of junior players is Rs.Y. Find the total contribution from the cricket team towards the floods.
+Input format:
+First line of the input is an integer “X” that specifies the salary of the senior players in rupees.
+Second line is an integer “Y” that specifies the salary of the junior players in rupees.
+Output format:
+Output should display a flood that gives the total contribution of money in rupees from the cricket team. The float value should be displayed correct to 2 decimal places.
+Sample input and output 1:
+45000
+40000
+215000.00
+Sample input and output 2:
+78000
+60000
+354000.00
+Ans:
+X=int(input())
+Y=int(input())
+t1=X*.50*6
+t2=Y*.40*5
+t=(t1+t2)
+print("%.2f"%t)
+
+
+6)
+It were the days of domination from the traditional metros in the team selections and everytime the team is announced for the Indian Squad, mere disappointment was left with this small town player. Dhoni’ill fate continued even during the team selections for the India A squad to tour to Zimbabwe.3 new players from Mumbai were on the list for the Indian team and it was claimed by the selectors that Dhoni was a bit younger than the 3 selected players.
+  Assume the 3 players are Named X,Y and Z. The ages of the players X and Y are the same and the age of the Z is 10 more than other 2 players. Given the total age of the 3 players, find the age of the 3 players.
+Input format:
+First line of the input is an integer that corresponds to the total age of the 3 players.
+Output format:
+Output should display the ages of the three players in 3 lines. The age of the eldest player should be displayed in the last line.
+Sample input and output 1:
+70
+20
+20
+30
+Sample input and output 2:
+100
+30
+30
+40
+7)
+You are given principal amount, rate of interest per annum, and time in years. You need to calculate the simple interest.
+Input and Output Format
+Input Format:
+The first line contains the principal amount (principal).
+The second line contains the rate of interest (rate) per annum.
+The third line contains the time (time) in years.
+Output Format:
+A single line containing the simple interest calculated.
+Sample Input 1
+1000
+5
+2
+Sample Output 1
+100.0
+Sample Input 2
+5000
+8.5
+3
+Sample Output 2
+1275.0
+Sample Input 3
+5000
+8.5
+3
+Sample Output 3
+525.0
+8)
+You are given a temperature in Celsius. You need to convert it to Fahrenheit.
+Input and Output Format
+Input Format:
+A single integer celsius.
+Output Format:
+A single line containing the temperature in Fahrenheit.
+To convert a temperature from Celsius to Fahrenheit, you use the following formula:
+Multiply the temperature in Celsius by 9/5.
+Add 32 to the result of step 1.
+Sample Input 1
+0
+Sample Output 1
+32.0
+Sample Input 2
+25
+Sample Output 2
+77.0
+Sample Input 3
+100
+Sample Output 3
+212.0
+9)
+Ajay, Binoy and Chandru were very close friends at school. They were very good in Mathematics and they were the pet students of Emily Mam. Their gang was known as 3-idiots. Ajay, Binoy and Chandru live in the same locality. A new student Dinesh joins their class and he wanted to be friends with them. He asked Binoy about his house address. Binoy wanted to test Dinesh's mathematical skills. Binoy told Dinesh that his house is at the midpoint of the line joining Ajay's house and Chandru's house. Dinesh was puzzled. Can you help Dinesh out? Given the coordinates of the 2 end points of a line (x1,y1) and (x2,y2), write a python program to find the midpoint of the line. Input Format: Input consists of 4 integers. The first integer corresponds to x1 . The second integer corresponds to y1. The third and fouth integers correspond to x2 and y2 respectively. Output Format: Refer Sample Input and Output for exact formatting specifications. [All floating point values are displayed correct to 1 decimal place]
+ 
+Input (stdin)
+2
+4
+10
+15
+ 
+Output (stdout)
+Binoy's house is located at (6.0,9.5)
+10)
+ Distance Between Two Points
+Problem Statement
+Ajay, Binoy, and Chandru decide to play a game of distance calculation. Each of them will give their house coordinates and they need to calculate the distance between Ajay's house and Chandru's house. Given the coordinates of the 2 endpoints of a line (x1,y1)(x_1, y_1)(x1​,y1​) and (x2,y2)(x_2, y_2)(x2​,y2​), write a Python program to find the distance between the points.
+Input Format
+Input consists of 4 integers. The first integer corresponds to x1x_1x1​. The second integer corresponds to y1y_1y1​. The third and fourth integers correspond to x2x_2x2​ and y2y_2y2​ respectively.
+Output Format
+Refer to the Sample Input and Output for exact formatting specifications. [All floating point values are displayed correct to 2 decimal places]
+Sample Input
+3
+4
+6
+8
+
+Sample Output
+The distance between Ajay's house and Chandru's house is 5.00
+
+Solution
+import math
+
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+
+distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+print(f"The distance between Ajay's house and Chandru's house is {distance:.2f}")
+
+
+
+
+
+11)
+Finding the Area of a Triangle
+Problem Statement
+Ajay, Binoy, and Chandru decide to test their geometry skills. They want to calculate the area of the triangle formed by their house coordinates. Given the coordinates of the 3 vertices of a triangle (x1,y1)(x_1, y_1)(x1​,y1​), (x2,y2)(x_2, y_2)(x2​,y2​), and (x3,y3)(x_3, y_3)(x3​,y3​), write a Python program to find the area of the triangle.
+Formula
+Area=1/2​∣x1​(y2​−y3​)+x2​(y3​−y1​)+x3​(y1​−y2​)∣
+Input Format
+Input consists of 6 integers. The first two integers correspond to (x1,y1)(x_1, y_1)(x1​,y1​). The next two integers correspond to (x2,y2)(x_2, y_2)(x2​,y2​). The last two integers correspond to (x3,y3)(x_3, y_3)(x3​,y3​).
+Output Format
+Refer to the Sample Input and Output for exact formatting specifications. [All floating point values are displayed correct to 2 decimal places]
+Sample Input
+
+0
+0
+4
+0
+0
+3
+
+Sample Output
+
+The area of the triangle is 6.00
+
+Solution
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+x3 = int(input())
+y3 = int(input())
+
+area = abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) / 2
+
+print(f"The area of the triangle is {area:.2f}")
+
+12)
+ Finding the Slope of a Line
+Problem Statement
+Ajay and Binoy are curious about the slope of the line joining their houses. Given the coordinates of the 2 endpoints of a line (x1,y1)(x_1, y_1)(x1​,y1​) and (x2,y2)(x_2, y_2)(x2​,y2​), write a Python program to find the slope of the line.
+Formula:
+slope=x2​−x1/​y2​−y1​​
+Input Format
+Input consists of 4 integers. The first integer corresponds to x1x_1x1​. The second integer corresponds to y1y_1y1​. The third and fourth integers correspond to x2x_2x2​ and y2y_2y2​ respectively.
+Output Format
+Refer to the Sample Input and Output for exact formatting specifications. [All floating point values are displayed correct to 2 decimal places]
+Sample Input
+
+1
+2
+3
+6
+
+Sample Output
+
+The slope of the line joining Ajay's house and Binoy's house is 2.00
+
+Solution
+
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+
+if x2 != x1:
+    slope = (y2 - y1) / (x2 - x1)
+    print(f"The slope of the line joining Ajay's house and Binoy's house is {slope:.2f}")
+else:
+    print("The line is vertical, slope is undefined")
+
+Decision Making
+1)Get two integers x and y from the user and write a program to relate 2 integers as equal to, less than or greater than.
+Input format:
+Input consist of 2 integers
+The first input corresponds to  the first number.(a)
+The second input corresponds to the second number.(b)
+Output format:
+If the first number is equal to the second number, print "x and y are equal". Otherwise, print "x greater than y" or "x less than y"
+Sample Input:
+6
+8
+Sample Output:
+6 less than 8
+
+2)Write a program to check whether the given character is vowel or consonant.
+Input format:
+The input consist of a character
+Output format:
+The output consists of a below-given string
+“Vowel” / “Consonant” / “Not an alphabet”
+Sample Input:
+e
+
+Sample Output:
+Vowel
+Ans:
+a=input()
+if(a=='a' or a=='e' or a=='i' or a=='o' or a=='u'):
+    print('Vowel')
+elif(a>'a' and 'a'<a):
+    print("Consonant")
+else:
+    print("Not an alphabet")
+3)The newly appointed Vice-Chancellor of Anna University wanted to create an automated grading system for the students to check their grade. When a student enters a mark, the grading system displays the corresponding grade.
+Write a program to solve the given problem.
+  Marks scored  
+  Grade 
+100
+S
+90 - 99
+A
+80 - 89
+B
+70 - 79
+C
+60 - 69
+D
+50 - 59
+E
+<50
+F
+
+Input format:
+The input consists of one integer which corresponds to the marks scored by the student
+
+Output format:
+If a student marks greater than 100, print "Invalid Input". Otherwise, print the grade.
+Sample Input:
+78
+Sample Output:C
+
+4) A fruit seller buys a dozen of banana at Rs.X. He sells 1 banana at Rs.Y. Write a program to determine the profit or loss in Rs. for the fruitseller.
+Input format:
+Input consists of 2 floating point numbers
+The first input corresponds to the total cost(X)
+The second input corresponds to the sold cost(Y)
+Output format:
+Print "Profit or Loss" with Rupees.
+Sample Input:
+60
+4
+Sample Output:
+Loss : Rs.12.00
+
+5) 
+Write a program to determine the fee amount to be collected from a student. 
+Refer the table below for fee details.
+  Student Type  
+  Student Type denoted as  
+  Fee Details  
+Merit Seat Day Scholar
+MSDS
+
+Tuition fee + Bus fee
+
+
+
+Merit Seat Hosteller
+MSH
+Tuition fee + Hostel fee
+
+Management Seat Day Scholar
+
+
+
+MGSDS
+
+150% of Tuition fee + Bus fee
+
+
+
+Management Seat Hosteller
+MGSH
+
+150% of Tuition fee + Hostel fee
+
+
+
+
+Input format:
+The first input corresponds to the student type
+The second input corresponds to the tuition fee
+The third input corresponds to the bus fee or hostel fees
+Output format:
+Print the total fee amount of the corresponding student with 2 decimal places.
+Refer below sample output for formatting
+Sample Input:
+MSH
+40000
+50000
+Sample Output:
+90000.00
+
+6)
+Ask a user for their birth year encoded as two digits (like "62") and for the current year, also encoded as two digits (like "99"). Write a program to find the users current age in years.
+Input format:
+Input consists of 2 integers
+The first integer corresponds to the last 2 digits of the birth year
+The second integer corresponds to the last 2 digits of the current year
+Output format:
+Print the user's current age
+Refer below sample output for formatting.
+Sample Input:
+62
+00
+Sample Output:
+38
+7)
+There are 3 labs in the CSE department(L1, L2, and L3) with a seating capacity of x, y, and z respectively. Find the lab which has minimal seating capacity.  
+Input format:
+Input consists of 3 integers
+The first input denotes the seating capacity of L1(a)
+The second input denotes the seating capacity of L2(b)
+The third input denotes the seating capacity of L3(c)
+Output format:
+Print the minimal seating lab capacity
+Refer the Sample output for formatting
+Sample Input:
+30
+40
+20
+Sample Output:
+L3
+Ans :
+
+L1=int(input())
+L2=int(input())
+L3=int(input())
+if((L1<L2) and (L1<L3)):
+    print("L1")
+elif(L2<L3 and L2<L1):
+    print("L2")
+else:
+    print("L3")
+
+8)
+There are 3 labs in the CSE department are L1, L2, and L3 with a seating capacity of x, y, and z respectively. One of the 3 labs has been allocated for ACE training. Out of the available labs, find the lab which has minimal seating capacity.
+Input format:
+Input consists of 3 integers and a string
+The first input denotes the seating capacity of L1(a)
+The second input denotes the seating capacity of L2(b)
+The third input denotes the seating capacity of L3(c)
+The fourth input denotes the lab which is allocated for ACE training
+Output format:
+Print the minimal seating capacity lab amongst the available labs.
+Refer the Sample output for formatting
+Sample Input:
+30
+40
+20
+L3
+Sample Output:
+L1
+9)
+There are 3 labs in the CSE department are L1, L2, and L3 with a seating capacity of x, y, and z. A single lab needs to be allocated to a class of 'n' students. How many of the 3 labs can accommodate 'n' students?
+Input format:
+Input consists of 4 integers
+The first input denotes the seating capacity of L1(a)
+The second input denotes the seating capacity of L2(b)
+The third input denotes the seating capacity of L3(c)
+The fourth input denotes the number of students(x)
+Output format:
+Print the number of labs which can accommodate the 'n' number of students
+Refer the Sample output for formatting
+Sample Input:
+30
+40
+20
+25
+Sample Output:
+2 
+10)
+
+
+ There are 3 labs in the CSE department. The labs are L1, L2, and L3 with a seating capacity of x, y, and z respectively. A single lab needs to be allocated to a class of 'n' students. The labs need to be utilized to the maximum i.e the number of systems used should not be minimal. Which lab needs to be allocated to this class?
+Input format:
+Input consists of 4 integers
+The first input denotes 'x'
+The second input denotes 'y'
+The third input denotes 'z'
+The fourth input denotes 'n'
+Output format:
+Print the lab which is suitable for  'n' number of students
+Refer the Sample output for formatting
+Sample Input:
+30
+40
+20
+25
+Sample Output:
+L1
+LOOPING
+1)The environmental eco club has discovered a new Amoeba that grows in the order of a Fibonacci series every month. They are exhibiting their amoeba in a national conference. They want to know the size of the amoeba at a particular time instant. If a particular month’s index is given, write a  program to displays the amoeba’s size……???. For Example, The size of the amoeba on month 1, 2, 3, 4, 5, 6, ..will be 0, 1, 1, 2, 3, 5, 8 respectively.
+Input format:
+The first input containing an integer which denotes the number of the month
+Output format:
+Print the amoeba size.
+Refer the sample output for formatting.
+Sample Input:
+7
+Sample Output:
+8
+Ans:
+n=int(input())
+a=0
+b=1
+for i in range (3,n+1):
+	c=a+b
+	a=b
+	b=c
+print (c)
+
+
+
+2)Write a program to determine whether 'n' is a factorial number or not. Factorial of a number is the product of all positive numbers from 1 to 'n'.
+Input format:
+The input containing an integer 'n' which denotes the given number.
+Output format:
+If the given number is factorial, print "Yes". Otherwise, print "No".
+Refer the sample output for formatting.
+Sample Input:
+6
+Sample Output:
+Yes
+3) a = 0, b=0, c=1 are the 1st three terms. All other terms in the Lucas sequence are generated by the sum of their 3 most recent predecessors. Write a program to generate the first n terms of a Lucas Sequence.
+Input format:
+The input containing an integer 'n' which denotes the given number
+Output format:
+Print the  'n' terms of the Lucas Sequence, separated by a single space. There are no leading or trailing spaces in the output.
+Refer the sample output for formatting.
+Sample Input:
+5
+Sample Output:
+0 0 1 1 2
+Ans:
+n=int(input())
+a=0
+b=0
+c=1
+print(a,end=’ ‘)
+print(b,end=’ ‘)
+print(c,end=’ ‘)
+for i in range (4,n+1):
+	d=a+b+c
+	a=b
+	b=c
+	c=d
+	print(d,end=’ ‘)
+4)The rules for generating Collatz Sequence are:
+If n is even:   n = n / 2
+If n is odd:    n = 3n + 1
+For example, if the starting number is 5 the sequence is:
+5 -> 16 -> 8 -> 4 -> 2 -> 1
+It has been proved for almost all integers, the repeated application of the above rule will result in a sequence that ends at 1.
+Input format:
+The input containing an integer 'n' which denotes the given number
+Output format:
+Print the numbers in the sequence and also print the number of times the rule has to be applied in order to reach 1.
+Refer the sample output for formatting.
+Sample Input:
+5
+Sample Output:
+5
+16
+8
+4
+2
+1
+5
+5)Write a program to check whether the given number is a trendy number or not. A number is said to be a trendy number if and only if it has 3 digits and the middle digit is divisible by 3.
+Input format:
+The input containing an integer 'n' which denotes the given number
+Output format:
+If the given number is a trendy number, then print "Trendy Number". Otherwise, print "Not a Trendy Number".
+Refer the sample output for formatting.
+Sample Input:
+791
+Sample Output:
+Trendy Number
+Ans :
+n=int(input())
+if(n>=100 and n<=999):
+    a=n//10
+    b=a%10
+    if(b%3==0):
+        print("Trendy Number")
+    else:
+        print("Not a Trendy number")
+else:
+    print("Not a Trendy Number")
+
+
+List
+Write a program to create a list and display it. 
+Input format:
+Input consist of n+1 integers
+First integer corresponds to the size of the list
+Next n inputs corresponds to the elements in the list 
+Output format: 
+Output is an integer list
+Sample Input
+4 
+1
+2
+3
+4
+Output
+[1, 2, 3, 4]
+
+
+2)Write a program to create a list and display it. 
+Input format:
+Input consist of n+1 integers
+First integer corresponds to the size of the list
+Next n inputs corresponds to the elements in the list 
+Output format: 
+Output is an integer list
+Sample Input
+4 
+1
+2
+3
+4
+Output
+1 2 3 4
+3)Write a Python Program to find the largest number in a list
+Input & Output Format:
+Input consists of one list and one integer.
+First input consists of a size of a list.
+Second inputs corresponds to the size of the list.
+Output consists of the largest element.
+Sample Input:
+5
+1
+2
+3
+6
+5
+Sample Output:
+6
+4)Write a Python Program to put the even and odd elements in a list into two different lists.
+Input format:
+Input consists of one integer and one list.
+First input consists of the size of the list.
+Second input consists of the elements based on the size.
+Output format:
+Output consists of two lists.
+First list consists of all the even numbers in the list.
+Second list consists of all the odd numbers in the list.
+Sample Input:
+5
+1
+2
+3
+6
+5
+Sample Output:
+The even list [2, 6]
+The odd list [1, 3, 5]
+5)Write a program to find the sum of the elements in the array. 
+Input Format: 
+Input consists of n+1 integers where n corresponds to the number of elements in the array.
+The first integer corresponds to n and the next n integers correspond to the elements in the array.
+Assume that the maximum number of elements in the array is 20. 
+Output Format: 
+Output consists of a double value which corresponds to the mean of the array.
+Refer sample input and output for formatting specifications.
+Sample Input: 
+5
+2
+4
+1
+3
+1
+Sample Output:
+11
+6)Write a Python Program to find the smallest number in a list
+Input & Output Format:
+Input consists of one list and one integer.
+First input consists of a size of a list.
+Second inputs corresponds to the size of the list.
+Output consists of the largest element.
+Sample Input:
+5
+1
+2
+3
+6
+5
+Sample Output:
+1
+
+
+7)Write a Program to find the search element in the given list
+Input & Output Format:
+Input consists of one list and one integer.
+First input consists of a size of a list.
+Second inputs corresponds to the elements of list in single line separated by space.
+Third input consists of the element which we need to search
+Sample Input 1:
+5
+1 2 3 6 5
+3
+Sample Output 1:
+3 is present in the given list
+Sample Input 2:
+5
+1 2 3 6 5
+4
+Sample Output 2:
+4 is not present in the given list
+8)Write a program to count the number of times the given value is repeated.
+Input Format:
+First line of input consists of our list elements.
+Second line of input consists of value to count.
+Output Format:
+Print thr number of times the given value is repeated in the list.
+Sample Input:
+10 20 10 40 10
+10
+Sample Output:
+3
+9)Write a program to print the given list in reverse order.
+Sample Input:
+10 20 30 40 50
+Sample Output:
+50 40 30 20 10 
+10)Write a program to sort the given list and print it.
+Sample Input:
+30 20 10 50 40
+Sample Output:
+10 20 30 40 50 
+
+
+
+
+
+
